@@ -13,6 +13,8 @@ const IconProvider = (source: ImageRequireSource) => ({
 export const AppIconsPack = {
   name: 'app',
   icons: {
+    
+    'home': IconProvider(require('../assets/images/icon-home.png')),
     'messages': IconProvider(require('../assets/images/icon-messages.png')),
     'contacts': IconProvider(require('../assets/images/icon-contacts.png')),
     'discover': IconProvider(require('../assets/images/icon-discover.png')),
