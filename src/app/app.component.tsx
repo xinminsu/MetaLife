@@ -13,10 +13,10 @@ import { AppStorage } from '../services/app-storage.service';
 import { Mapping, Theme, Theming } from '../services/theme.service';
 
 const loadingTasks: Task[] = [
-  () => LoadFontsTask({
+/*  () => LoadFontsTask({
     'opensans-regular': require('../assets/fonts/opensans-regular.ttf'),
     'roboto-regular': require('../assets/fonts/roboto-regular.ttf'),
-  }),
+  }),*/
   () => AppStorage.getMapping(defaultConfig.mapping).then(result => ['mapping', result]),
   () => AppStorage.getTheme(defaultConfig.theme).then(result => ['theme', result]),
 ];
